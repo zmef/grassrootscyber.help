@@ -1,0 +1,65 @@
+body {
+  font-family: 'Georgia', serif;
+  background: #f5f5f0;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: #1b4d3e;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.cta-buttons a {
+  margin: 0.5rem;
+  display: inline-block;
+  background: #84a98c;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section h2 {
+  border-bottom: 2px solid #84a98c;
+  padding-bottom: 0.5rem;
+}
+
+footer {
+  background: #1b4d3e;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.services .plan {
+  background: #e0e0d1;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-left: 5px solid #84a98c;
+}
+
+.plan h3 {
+  margin-top: 0;
+}
