@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Cybersecurity Wellness Check</title>
-    <link rel="stylesheet" href="style.css"> </head>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
     <div class="container">
         <header>
@@ -25,12 +26,19 @@
             </div>
 
             <form id="wellnessForm">
-                </form>
-            <div class="navigation-buttons">
-                <button type="button" id="prevBtn" class="btn secondary-btn hidden"><i class="fas fa-arrow-left"></i> Previous</button>
-                <button type="button" id="nextBtn" class="btn primary-btn"><i class="fas fa-arrow-right"></i> Next</button>
-                <button type="submit" id="submitBtn" class="btn primary-btn hidden"><i class="fas fa-check-circle"></i> Get Report</button>
-            </div>
+                <!-- The question content will be injected here by script.js -->
+                <div class="navigation-buttons">
+                    <button type="button" id="prevBtn" class="btn secondary-btn hidden">
+                        <i class="fas fa-arrow-left"></i> Previous
+                    </button>
+                    <button type="button" id="nextBtn" class="btn primary-btn">
+                        <i class="fas fa-arrow-right"></i> Next
+                    </button>
+                    <button type="submit" id="submitBtn" class="btn primary-btn hidden">
+                        <i class="fas fa-check-circle"></i> Get Report
+                    </button>
+                </div>
+            </form>
         </section>
 
         <section id="results" class="app-section hidden">
@@ -41,8 +49,7 @@
             </div>
             <div class="recommendations-container">
                 <h3><i class="fas fa-lightbulb"></i> Personalized Recommendations:</h3>
-                <div id="recommendationList">
-                    </div>
+                <div id="recommendationList"></div>
             </div>
             <div class="resources">
                 <h3><i class="fas fa-book-open"></i> Further Resources:</h3>
@@ -58,5 +65,6 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script> </body>
+    <script src="script.js"></script>
+</body>
 </html>
