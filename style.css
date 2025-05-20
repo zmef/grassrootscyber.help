@@ -1,0 +1,323 @@
+/* General Body & Container */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #eef2f7; /* Light blue-gray background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to top */
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    color: #007bff;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Sections */
+.app-section {
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.app-section h2 {
+    color: #0056b3;
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Hidden Utility Class */
+.hidden {
+    display: none !important;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.primary-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    background-color: #6c757d;
+    color: white;
+}
+
+.secondary-btn:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+/* Introduction Section */
+#introduction {
+    text-align: center;
+}
+
+#introduction p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+/* Quiz Section */
+.progress-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    height: 20px;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #28a745; /* Green progress bar */
+    border-radius: 10px;
+    transition: width 0.4s ease-in-out;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#progressText {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 20px;
+    color: #444;
+    font-size: 0.9em;
+    font-weight: bold;
+    z-index: 1; /* Ensure text is above bar */
+}
+
+.question-container {
+    background-color: #f8f9fa; /* Light background for question box */
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.question-container label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #495057;
+}
+
+.question-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    cursor: pointer;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.question-option:hover {
+    background-color: #f1f4f8;
+    border-color: #a3c9f2;
+}
+
+.question-option input[type="radio"] {
+    margin-right: 12px;
+    transform: scale(1.2); /* Slightly larger radio buttons */
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/* Results Section */
+#results {
+    text-align: center;
+}
+
+.score-summary {
+    background-color: #e6f7ff; /* Light blue for summary */
+    border: 1px solid #91d5ff;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.score-summary h3 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: #0056b3;
+}
+
+.score-summary p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.status-indicator {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.status-good {
+    color: #28a745; /* Green */
+    background-color: #e6ffe6;
+    border: 1px solid #a8e6a8;
+}
+
+.status-needs-improvement {
+    color: #ffc107; /* Orange */
+    background-color: #fff8e6;
+    border: 1px solid #ffe7a8;
+}
+
+.status-at-risk {
+    color: #dc3545; /* Red */
+    background-color: #ffe6e6;
+    border: 1px solid #ffa8a8;
+}
+
+.recommendations-container {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.recommendations-container h3 {
+    color: #0056b3;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+}
+
+.recommendation-item {
+    background-color: #fef8f0; /* Light peach for recs */
+    border-left: 5px solid #ff8c00; /* Orange border */
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.recommendation-item strong {
+    color: #d15c00; /* Darker orange */
+}
+
+.resources {
+    text-align: left;
+    margin-top: 40px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+}
+
+.resources h3 {
+    color: #0056b3;
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+.resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources ul li {
+    margin-bottom: 10px;
+}
+
+.resources ul li a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.resources ul li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Font Awesome Icon Styling */
+.fas {
+    margin-right: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px 10px;
+        padding: 25px;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+    .navigation-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .navigation-buttons button {
+        width: 100%;
+    }
+}
