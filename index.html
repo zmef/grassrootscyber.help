@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cybersecurity Wellness Check</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-shield-alt"></i> Cybersecurity Wellness Check</h1>
+            <p>Assess your digital security habits and get personalized tips to stay safe online.</p>
+        </header>
+
+        <section id="introduction" class="app-section">
+            <h2>Welcome!</h2>
+            <p>This quick check will help you understand your current cybersecurity strengths and identify areas for improvement. It's completely anonymous and runs entirely in your browser.</p>
+            <button id="startQuizBtn" class="btn primary-btn"><i class="fas fa-play-circle"></i> Start Check</button>
+        </section>
+
+        <section id="quiz" class="app-section hidden">
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+                <span id="progressText">Question 1 of 8</span>
+            </div>
+
+            <form id="wellnessForm">
+                </form>
+            <div class="navigation-buttons">
+                <button type="button" id="prevBtn" class="btn secondary-btn hidden"><i class="fas fa-arrow-left"></i> Previous</button>
+                <button type="button" id="nextBtn" class="btn primary-btn"><i class="fas fa-arrow-right"></i> Next</button>
+                <button type="submit" id="submitBtn" class="btn primary-btn hidden"><i class="fas fa-check-circle"></i> Get Report</button>
+            </div>
+        </section>
+
+        <section id="results" class="app-section hidden">
+            <h2><i class="fas fa-chart-pie"></i> Your Wellness Report</h2>
+            <div class="score-summary">
+                <h3>Overall Status: <span id="overallStatus" class="status-indicator"></span></h3>
+                <p>Your Score: <span id="finalScore"></span> / 100</p>
+            </div>
+            <div class="recommendations-container">
+                <h3><i class="fas fa-lightbulb"></i> Personalized Recommendations:</h3>
+                <div id="recommendationList">
+                    </div>
+            </div>
+            <div class="resources">
+                <h3><i class="fas fa-book-open"></i> Further Resources:</h3>
+                <ul>
+                    <li><a href="https://www.cisa.gov/cybersecurity-awareness-month" target="_blank"><i class="fas fa-external-link-alt"></i> CISA Cybersecurity Awareness</a></li>
+                    <li><a href="https://www.nist.gov/cyberframework" target="_blank"><i class="fas fa-external-link-alt"></i> NIST Cybersecurity Framework</a></li>
+                    <li><a href="https://haveibeenpwned.com/" target="_blank"><i class="fas fa-external-link-alt"></i> Check if your email has been compromised (Have I Been Pwned?)</a></li>
+                    <li><a href="https://www.eff.org/pages/cybersecurity-privacy-tips" target="_blank"><i class="fas fa-external-link-alt"></i> EFF Cybersecurity & Privacy Tips</a></li>
+                </ul>
+            </div>
+            <button id="restartBtn" class="btn secondary-btn"><i class="fas fa-redo"></i> Start New Check</button>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script> </body>
+</html>
