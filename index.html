@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Cybersecurity Wellness Check</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons (optional, if not already included) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -26,19 +28,20 @@
             </div>
 
             <form id="wellnessForm">
-                <!-- The question content will be injected here by script.js -->
-                <div class="navigation-buttons">
-                    <button type="button" id="prevBtn" class="btn secondary-btn hidden">
-                        <i class="fas fa-arrow-left"></i> Previous
-                    </button>
-                    <button type="button" id="nextBtn" class="btn primary-btn">
-                        <i class="fas fa-arrow-right"></i> Next
-                    </button>
-                    <button type="submit" id="submitBtn" class="btn primary-btn hidden">
-                        <i class="fas fa-check-circle"></i> Get Report
-                    </button>
-                </div>
+                <!-- Question content will be injected here by script.js -->
             </form>
+
+            <div class="navigation-buttons">
+                <button type="button" id="prevBtn" class="btn secondary-btn hidden">
+                    <i class="fas fa-arrow-left"></i> Previous
+                </button>
+                <button type="button" id="nextBtn" class="btn primary-btn">
+                    <i class="fas fa-arrow-right"></i> Next
+                </button>
+                <button type="submit" id="submitBtn" class="btn primary-btn hidden">
+                    <i class="fas fa-check-circle"></i> Get Report
+                </button>
+            </div>
         </section>
 
         <section id="results" class="app-section hidden">
@@ -57,14 +60,15 @@
                     <li><a href="https://www.cisa.gov/cybersecurity-awareness-month" target="_blank"><i class="fas fa-external-link-alt"></i> CISA Cybersecurity Awareness</a></li>
                     <li><a href="https://www.nist.gov/cyberframework" target="_blank"><i class="fas fa-external-link-alt"></i> NIST Cybersecurity Framework</a></li>
                     <li><a href="https://haveibeenpwned.com/" target="_blank"><i class="fas fa-external-link-alt"></i> Check if your email has been compromised (Have I Been Pwned?)</a></li>
-                    <li><a href="https://www.eff.org/pages/cybersecurity-privacy-tips" target="_blank"><i class="fas fa-external-link-alt"></i> EFF Cybersecurity & Privacy Tips</a></li>
                 </ul>
             </div>
-            <button id="restartBtn" class="btn secondary-btn"><i class="fas fa-redo"></i> Start New Check</button>
+            <div class="navigation-buttons">
+                <button type="button" id="restartBtn" class="btn secondary-btn">
+                    <i class="fas fa-redo"></i> Restart Check
+                </button>
+            </div>
         </section>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
