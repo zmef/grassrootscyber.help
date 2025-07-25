@@ -7,15 +7,16 @@ body {
     background-color: #eef2f7; /* Light blue-gray background */
     color: #333;
     display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Align to top */
+    flex-direction: column; /* CHANGE: Stacks children vertically */
+    align-items: center;     /* CHANGE: Centers children horizontally */
     min-height: 100vh;
 }
 
 .container {
+    flex-grow: 1; /* ADD: Allows container to grow, pushing footer down */
     max-width: 900px;
     width: 100%;
-    margin: 30px auto;
+    margin: 30px 0; /* CHANGE: Removed 'auto' since flexbox now handles centering */
     background: #ffffff;
     padding: 40px;
     border-radius: 12px;
